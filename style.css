@@ -1,0 +1,51 @@
+/*Aqui estou estilizando as tags direto, é bom deixar sempre na sequencia que aparece na página.*/
+body {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center; /* Isso serve para alinhar o texto no container.*/
+  margin: 0;
+}
+#hero {
+  width: 592px; /*Define o tamanho da imagem dentro do container*/
+  margin: 0 auto 72px;/*Alinha as margens, nesse caso eu coloquei 0 em cima, auto nas laterais e 72px embaixo.*/
+  /*O margin funciona assim: Top - laterais - bottom ou Top - dir - bottom - esq.*/
+}
+
+#hero img {
+  margin-bottom: 72px;/*Aqui estou ajustando o espaço entre a imagem e o h1 que vem na sequencia*/
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 49px;
+  line-height: 56px;
+  font-weight: normal;
+
+  margin-bottom: 32px;
+}
+
+h1 span { /* Aqui eu estou alterando só o span dentro do h1, vai obedecer as especificidades*/
+  font-weight: bold;
+}
+
+span, a {
+  color: #FF9900;
+  font-weight: bold;
+}
+
+p, #footer {
+  color: #7D7987;
+
+  font-size: 14px; /*Ajustar o tamanho da fonte*/
+  line-height: 28px; /*Ajustar a altura da fonte*/
+}
+
+#footer a + a{ /* Estou dizendo pra considerar o "a" que tem um "a" anterior*/
+  margin-left: 28px;  /*aplique uma margem esquerda nele de 28px*/
+}
+
+.line {
+  width: 568px;/*comprimento da linha*/
+  height: 0px;/*altura da linha */
+  margin: 0 auto 8px; /*Ajuste dentro do #hero*/
+  border: 1px solid #ECEFF2; /*Largura e cor da linha*/
+}

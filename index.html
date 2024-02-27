@@ -1,0 +1,71 @@
+<!DOCTYPE html><!-- Aqui apenas diz o tipo de documento-->
+<html lang="pt-br"><!--Aqui vai vir com "eng" e é preciso trocar.-->
+
+  <head>
+    <!--Daqui pra baixo é o estilo da fonte, estou usando 2.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <meta charset="UTF-8"><!-- É preciso ter isso para usar os caracteres do pt.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!--Aqui diz que a tela vai ser ajustada ao dispositivo.-->
+    
+    <title>Móveis customizados</title><!--Inserir o título aqui, vai aparecer na aba do navegador.-->
+    
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans:wght@400;700&display=swap" 
+      rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!--Vou colocar a imagem de bolinhas como plano de fundo-->
+    <style> 
+      body{ background-image: url(balls.svg);}  
+    </style>
+
+  </head>
+  <body> 
+    <div id="hero"><!--Toda vez que eu quiser fazer um bloco de texto [container]-->
+      <!--Agora vou inserir uma imagem-->
+      <img 
+        src="img1.jpg" 
+        alt="Desenho de uma pessoa vestindo uma camisa amarela em uma sala com móveis">
+      <!--Deve-se sempre usar o src pra buscar a img e o alt para
+      mostrar uma alternativa para a imagem, para deficientes -->
+    
+      <h1>Ambientes <span>únicos</span> para você!</h1><!--Sempre usar o h para cabeçalho, vai de h1 a h6-->
+      <p>
+        Nós criamos ambientes <strong>exclusívos</strong> e <strong>únicos</strong>, 
+        com muito bom gosto e profissionalismo, 
+        investimos tempo e <span>dedicação no seu projeto.</span><!--O span vai deixar o texto inline.-->
+        
+        <br/><!--Usar para quebrar/saltar linhas dentro do parágrafo.-->
+        <br/>
+
+        Tenha <span style="color: #FF9900">ambientes limpos</span> e bem decorados, </span> <!--Posso estilizar aqui ou direto no css-->
+        transmitindo <strong>elegância e finesse</strong> para todo
+        aquele que estiver ali.
+      </p>
+      
+    </div>
+
+    <div id="footer"><!--Fiz isso aqui pra criar o meu rodapé-->
+
+      <div class="line"></div><!--Criei uma linha para separar o rodapé do body-->
+      <!--Posso também trocar id por class e aí usar onde eu quiser, mas no css vou trocar o # por .-->
+
+
+      <a
+        target="_blank"
+        href="https://instagram.com/moveisparavoce">
+          Instagram
+      </a><!--botei o link para quer seja direcionado ao clicar e o "_blank para abrir o link em uma nova aba."-->
+
+      &nbsp;<!--Esse comando vai considerar espaço entre os elementos-->
+
+      <a href="mailto:contato@moveisparavoce.com"> <!--Vai direcionar direto para mandar email para o contato.-->
+        Fale conosco
+      </a>
+
+    </div>  
+  </body>
+</html>
